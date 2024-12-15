@@ -2,7 +2,7 @@
 
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 
-# Ask Doubt on telegram @KingVJ01
+# Ask Doubt on telegram @MovieKingHubSupportbot
 
 
 
@@ -306,7 +306,7 @@ YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998",
 
                            # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 
-                           # Ask Doubt on telegram @KingVJ01
+                           # Ask Doubt on telegram @MovieKingHubSupportbot
 
 
 
@@ -392,4 +392,4 @@ else:
 
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 
-# Ask Doubt on telegram @KingVJ01
+# Ask Doubt on telegram @MovieKingHubSupportbot
