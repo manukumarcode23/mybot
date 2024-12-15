@@ -22,7 +22,7 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 
-SESSION = environ.get('SESSION', 'TechVJBot')
+SESSION = environ.get('SESSION', 'Movie King Hub')
 
 API_ID = int(environ.get('API_ID', '25929889'))
 
