@@ -226,11 +226,11 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
 
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'omegalinks.in')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', '')
 
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', 'e44f59840c24311ea995ee4e1a1969246e403af9')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
 
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
