@@ -198,9 +198,9 @@ BUTTON_MODE = bool(environ.get('BUTTON_MODE', True))
 
 MAX_BTN = bool(environ.get('MAX_BTN', True))
 
-IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
+IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
-IMDB = bool(environ.get('IMDB', True))
+IMDB = bool(environ.get('IMDB', False))
 
 AUTO_FFILTER = bool(environ.get('AUTO_FFILTER', True))
 
@@ -252,13 +252,13 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 # Shortlink Info
 
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
 
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
 
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'e44f59840c24311ea995ee4e1a1969246e403af9')
 
-TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/KR_Movie2') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
 
