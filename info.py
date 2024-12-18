@@ -2,7 +2,7 @@
 
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 
-# Ask Doubt on telegram @MovieKingHubSupportbot
+# Ask Doubt on telegram @KingVJ01
 
 
 
@@ -22,11 +22,11 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 
-SESSION = environ.get('SESSION', 'Movie King Hub')
+SESSION = environ.get('SESSION', 'TechVJBot')
 
-API_ID = int(environ.get('API_ID', '25929889'))
+API_ID = int(environ.get('API_ID', ''))
 
-API_HASH = environ.get('API_HASH', 'fd980dbd069e0b45d0dec91f7e616bad')
+API_HASH = environ.get('API_HASH', '')
 
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
@@ -36,7 +36,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
 
-PICS = (environ.get('PICS', 'https://i.ibb.co/Qbk14yy/IMG-20241210-172926.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split()
 
 
 
@@ -44,7 +44,7 @@ PICS = (environ.get('PICS', 'https://i.ibb.co/Qbk14yy/IMG-20241210-172926.jpg'))
 
 # Admins & Users
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5456381819').split()] # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()] # For Multiple Id Use One Space Between Each.
 
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
 
@@ -54,13 +54,14 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002361565292'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 
 
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002410637061').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]  # For Multiple Id Use One Space Between Each.
+
 
 
 # auth_channel means force subscribe channel.
@@ -119,9 +120,9 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 # MongoDB information
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ammumanu:ammumanu@ammumanu.qnr5e.mongodb.net/?retryWrites=true&w=majority&appName=ammumanu")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "")   # IF Multiple Database Is False Then Fill Only This Database Url.
 
-DATABASE_NAME = environ.get('DATABASE_NAME', "ammumanu")
+DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -155,9 +156,9 @@ REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal coun
 
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month') # time in week, day, month.
 
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://i.ibb.co/g42R5rZ/IMG-20241210-173534.jpg') # payment code picture url.
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/ce1723991756e48c35aa1.jpg') # payment code picture url.
 
-PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- 30ʀs - 1 ᴡᴇᴇᴋ\n- 50ʀs - 1 ᴍᴏɴᴛʜs\n- 120ʀs - 3 ᴍᴏɴᴛʜs\n- 220ʀs - 6 ᴍᴏɴᴛʜs\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>Contact Support For Upi id</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ</b>')
+PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- 30ʀs - 1 ᴡᴇᴇᴋ\n- 50ʀs - 1 ᴍᴏɴᴛʜs\n- 120ʀs - 3 ᴍᴏɴᴛʜs\n- 220ʀs - 6 ᴍᴏɴᴛʜs\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>demo@okxyz</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ</b>')
 
 
 
@@ -177,13 +178,13 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 # Links
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieKingHubDiscussion')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
 
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MovieKingHubOrg')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_botz')
 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MovieKingHubSupportbot') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
 
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Mr_manu_kumar')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/kingvj01')
 
 
 
@@ -197,7 +198,7 @@ BUTTON_MODE = bool(environ.get('BUTTON_MODE', True))
 
 MAX_BTN = bool(environ.get('MAX_BTN', True))
 
-IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
+IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 IMDB = bool(environ.get('IMDB', False))
 
@@ -225,13 +226,13 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
 
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'omegalinks.in')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', '')
 
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', 'e44f59840c24311ea995ee4e1a1969246e403af9')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
 
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://hii')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
 
 
@@ -257,7 +258,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/KR_Movie2') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
+TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
 
@@ -305,7 +306,7 @@ YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998",
 
                            # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 
-                           # Ask Doubt on telegram @MovieKingHubSupportbot
+                           # Ask Doubt on telegram @KingVJ01
 
 
 
@@ -317,7 +318,7 @@ STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
 
 
 
-# If Stream Mode Is True Then Fill All Required Variable, If True Then Don't Fill.
+# If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 
 MULTI_CLIENT = False
 
@@ -333,7 +334,7 @@ else:
 
     ON_HEROKU = False
 
-URL = environ.get("URL", "https://special-shayna-royalmanu-08f26408.koyeb.app/")
+URL = environ.get("URL", "https://testofvjfilter-1fa60b1b8498.herokuapp.com/")
 
 
 
@@ -391,4 +392,4 @@ else:
 
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 
-# Ask Doubt on telegram @MovieKingHubSupportbot
+# Ask Doubt on telegram @KingVJ01
