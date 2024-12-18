@@ -60,7 +60,7 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002361565292'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002410637061').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002258194106').split()]  # For Multiple Id Use One Space Between Each.
 
 
 
