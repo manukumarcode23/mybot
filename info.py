@@ -184,7 +184,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+V07pDEWmEf4yNWI1')
 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+eJXl_msonAY2YTJl') # Support Chat Link Without https:// or @
 
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Mr_manu_kumar')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/MovieKingHubSupportbot')
 
 
 
