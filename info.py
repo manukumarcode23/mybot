@@ -54,7 +54,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002213359277'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002361565292'))
 
 
 
@@ -76,7 +76,7 @@ TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True)) # Set True Or False (Th
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002060579330') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002318028950') # give your force subscribe channel id here else leave it blank
 
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
@@ -92,7 +92,7 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 
 # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
 
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002235094272')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002359718092')
 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
@@ -178,11 +178,11 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 # Links
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+eJXl_msonAY2YTJl')
 
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_botz')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+V07pDEWmEf4yNWI1')
 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'af_support_chat') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+eJXl_msonAY2YTJl') # Support Chat Link Without https:// or @
 
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Mr_manu_kumar')
 
