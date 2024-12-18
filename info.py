@@ -60,7 +60,7 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002361565292'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002072249227 -1002410637061').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002410637061').split()]  # For Multiple Id Use One Space Between Each.
 
 
 
@@ -76,7 +76,7 @@ TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (T
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
 
-auth_channel = environ.get('AUTH_CHANNEL', 'https://t.me/+V07pDEWmEf4yNWI1') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe channel id here else leave it blank
 
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
