@@ -242,9 +242,9 @@ VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', Flase))
 
 # if verify second shortner is True then fill below url and api
 
-VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'omegalinks.in')
+VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
 
-VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', 'e44f59840c24311ea995ee4e1a1969246e403af9')
+VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 
 
@@ -254,9 +254,9 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', 'e44f59840c24
 
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
 
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e44f59840c24311ea995ee4e1a1969246e403af9')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/KR_Movie2') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
