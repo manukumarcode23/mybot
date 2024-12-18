@@ -24,9 +24,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 SESSION = environ.get('SESSION', 'TechVJBot')
 
-API_ID = int(environ.get('API_ID', ''))
+API_ID = int(environ.get('API_ID', '25929889'))
 
-API_HASH = environ.get('API_HASH', '')
+API_HASH = environ.get('API_HASH', 'fd980dbd069e0b45d0dec91f7e616bad')
 
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
@@ -54,13 +54,13 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002361565292'))
 
 
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002410637061').split()]  # For Multiple Id Use One Space Between Each.
 
 
 
@@ -120,9 +120,9 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 # MongoDB information
 
-DATABASE_URI = environ.get('DATABASE_URI', "")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ammumanu:ammumanu@ammumanu.qnr5e.mongodb.net/?retryWrites=true&w=majority&appName=ammumanu")   # IF Multiple Database Is False Then Fill Only This Database Url.
 
-DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
+DATABASE_NAME = environ.get('DATABASE_NAME', "ammumanu")
 
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -226,11 +226,11 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
 
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
 
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', '')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'omegalinks.in')
 
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', 'e44f59840c24311ea995ee4e1a1969246e403af9')
 
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
