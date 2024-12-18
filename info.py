@@ -238,7 +238,7 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://hii')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
 
-VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', Flase))
+VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
 
 # if verify second shortner is True then fill below url and api
 
