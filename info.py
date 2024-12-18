@@ -76,7 +76,7 @@ TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True)) # Set True Or False (Th
 
 # This Is Force Subscribe Channel, also known as Auth Channel 
 
-auth_channel = environ.get('AUTH_CHANNEL', 'https://t.me/MovieKingHubOrg') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002465454625') # give your force subscribe channel id here else leave it blank
 
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
